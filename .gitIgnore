@@ -1,0 +1,46 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.log
+
+# NuGet Packages
+**/packages/*
+!**/packages/build/
+!**/packages/build/**
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# Azure Web App publish settings
+PublishProfiles/
+
+# Local History for Visual Studio
+.localhistory/
+
+# DotNet Core
+artifacts/
+
+# User-specific files
+*.dbmdl
+*.dbproj.schemaview
+
+# Backup files
+*.bak
+*.tmp
+*.temp
+
+# Other files
+*.cache
+*.pdb
