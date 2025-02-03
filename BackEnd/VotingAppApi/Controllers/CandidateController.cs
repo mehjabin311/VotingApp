@@ -52,13 +52,13 @@ namespace VotingAppApi.Controllers
         [Authorize(Roles = "admin")]
         public async Task<IActionResult> GetTopTwoCandidates()
         {
-            // Fetch top 2 candidates based on the highest number of votes
+            
             var topCandidates = await _context.Candidates
-                .OrderByDescending(c => c.Votes)   // Sort candidates by votes in descending order
-                .Take(3)                           // Take the top 3 candidates
+                .OrderByDescending(c => c.Votes)   
+                .Take(3)                           
                 .ToListAsync();
 
-            // Return the result as a JSON response
+            
             return Ok(topCandidates);
         }
     }

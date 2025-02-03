@@ -150,23 +150,6 @@ function Register() {
                     />
                   </div>
                 </div>
-                {/* <div className="mb-3">
-                  <label htmlFor="role" className="form-label">
-                    <FaUserTag className="me-2" />
-                    Role
-                  </label>
-                  <select
-                    className="form-select"
-                    id="role"
-                    name="role"
-                    value={formData.role}
-                    onChange={handleChange}
-                    required
-                  >
-                    <option value="">Select Role</option>
-                    <option value="voter">Voter</option>
-                  </select>
-                </div> */}
                 <div className="d-grid">
                   <button type="submit" className="btn btn-primary btn-lg" disabled={isLoading}>
                     {isLoading ? "Registering..." : "Register"}

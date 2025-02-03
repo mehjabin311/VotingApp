@@ -17,7 +17,7 @@ function AdminHome() {
   const [newCandidate, setNewCandidate] = useState({ name: '', party: '' })
   const [showDeleteModal, setShowDeleteModal] = useState(false)
   const [candidateToDelete, setCandidateToDelete] = useState(null)
-  const [showLogoutModal, setShowLogoutModal] = useState(false) // New state for logout confirmation
+  const [showLogoutModal, setShowLogoutModal] = useState(false) 
   const nav = useNavigate()
 
   const onLoadCandidateList = useCallback(async () => {
@@ -52,7 +52,7 @@ function AdminHome() {
   }, [])
 
   const onLogout = useCallback(() => {
-    setShowLogoutModal(true) // Show the logout confirmation modal
+    setShowLogoutModal(true) 
   }, [])
 
   const handleAddCandidate = async (e) => {
@@ -318,7 +318,7 @@ function AdminHome() {
               sessionStorage.removeItem("token")
               sessionStorage.removeItem("uId")
               nav("/login")
-              setShowLogoutModal(false) // Close the modal after logging out
+              setShowLogoutModal(false) 
             }}
           >
             Logout

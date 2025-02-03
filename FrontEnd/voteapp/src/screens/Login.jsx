@@ -84,23 +84,6 @@ function Login() {
                     required
                   />
                 </div>
-                {/* <div className="mb-3">
-                  <label htmlFor="role" className="form-label">
-                    <FaUserTag className="me-2" />
-                    Role
-                  </label>
-                  <select
-                    className="form-select"
-                    id="role"
-                    value={role}
-                    onChange={(e) => setRole(e.target.value)}
-                    required
-                  >
-                    <option value="">Select Role</option>
-                    <option value="voter">Voter</option>
-                    <option value="admin">Admin</option>
-                  </select>
-                </div> */}
                 <div className="d-grid">
                   <button type="submit" className="btn btn-primary btn-lg" disabled={isLoading}>
                     {isLoading ? "Logging in..." : "Login"}

@@ -190,7 +190,7 @@ function VoterHome() {
               <Form.Control
                 type="date"
                 name="Dob"
-                value={updatedVoter.Dob} // Pre-filled with existing data
+                value={updatedVoter.Dob} 
                 onChange={handleUpdateChange}
                 required
               />
